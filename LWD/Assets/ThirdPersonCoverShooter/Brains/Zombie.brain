@@ -1,0 +1,1115 @@
+{
+    "TriggerInvestigation": true,
+    "CoverInvestigationTimer": 8.0,
+    "UncoveredInvestigationTimer": 1.0,
+    "CoverCheckRange": 2.0,
+    "HandleReceivedHits": false,
+    "SetAttackerAsTarget": true,
+    "SearchIfUnknownEnemies": true,
+    "SetVisibleTargetIfNone": true,
+    "UnsetDeadTargets": true,
+    "SetVeryCloseTargets": true,
+    "SetCloseTargetThreshold": 8.0,
+    "ReactToEnemySounds": true,
+    "HearSoundSetTargetIfCurrentInvisible": true,
+    "HearSoundSearchIfNoEnemies": true,
+    "TriggerTargetTooClose": false,
+    "TargetTooCloseThreshold": 4.0,
+    "ReactToFriendTargets": false,
+    "SetFriendTargetIfNone": true,
+    "SetNewFriendTargetIfOwnInvisible": true,
+    "UpdateFriendTargetIfSameAndVisible": true,
+    "TellFriendsAboutTarget": false,
+    "CommunicationDistance": 20.0,
+    "CommunicateDelay": 1.0,
+    "OnlyVisibleDeath": false,
+    "OnlyVisibleResurrection": false,
+    "OnlyVisibleSpawn": false,
+    "GenerateSpecificDeathEvents": false,
+    "GenerateSpecificResurrectionEvents": false,
+    "GenerateSpecificSpawnEvents": false,
+    "StopOnDeath": true,
+    "ContinueOnResurrection": true,
+    "SearchIfFindDeathWithNoTarget": true,
+    "Layers": [
+        {
+            "Name": "Base",
+            "IsFreezingLayersAbove": false,
+            "Actions": [
+                2,
+                4,
+                8
+            ],
+            "Expressions": [
+                7
+            ],
+            "GlobalSaves": [],
+            "Comments": [],
+            "Entry": {
+                "Parent": 0,
+                "EditorPosition": {
+                    "x": 0.0,
+                    "y": -100.0
+                },
+                "_type": "",
+                "_fieldNames": [],
+                "_serializedValues": [],
+                "_serializedValueArray": [],
+                "_serializedVariableReferences": [],
+                "_serializedTriggerReferences": [],
+                "_serializedEvents": [],
+                "Triggers": [],
+                "Init": 1
+            },
+            "Any": {
+                "Parent": 0,
+                "EditorPosition": {
+                    "x": 0.0,
+                    "y": -200.0
+                },
+                "_type": "",
+                "_fieldNames": [],
+                "_serializedValues": [],
+                "_serializedValueArray": [],
+                "_serializedVariableReferences": [],
+                "_serializedTriggerReferences": [],
+                "_serializedEvents": [],
+                "Triggers": []
+            }
+        }
+    ],
+    "Actions": {
+        "keys": [
+            2,
+            4,
+            8
+        ],
+        "values": [
+            {
+                "Parent": 0,
+                "EditorPosition": {
+                    "x": 402.169677734375,
+                    "y": -150.9296875
+                },
+                "_type": "CoverShooter.AI.FollowWaypoints, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                "_fieldNames": [
+                    "Facing"
+                ],
+                "_serializedValues": [
+                    {
+                        "Type": 10,
+                        "ID": 0,
+                        "Vector": {
+                            "x": 1.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "Object": {
+                            "instanceID": 0
+                        },
+                        "Text": "",
+                        "Array": [],
+                        "SubType": 0
+                    }
+                ],
+                "_serializedValueArray": [],
+                "_serializedVariableReferences": [
+                    {
+                        "ID": 0
+                    }
+                ],
+                "_serializedTriggerReferences": [
+                    {
+                        "ID": 0
+                    }
+                ],
+                "_serializedEvents": [
+                    0
+                ],
+                "Triggers": [
+                    6
+                ],
+                "Name": "FollowWaypoints",
+                "HasLimitedTime": false,
+                "TimeLimit": {
+                    "Type": 1,
+                    "ID": 0,
+                    "Vector": {
+                        "x": 1.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "Object": {
+                        "instanceID": 0
+                    },
+                    "Text": "",
+                    "Array": [],
+                    "SubType": 0
+                },
+                "TimeOutTrigger": 0,
+                "SuccessTrigger": 0,
+                "FailureTrigger": 3,
+                "Extensions": [],
+                "Entry": {
+                    "Parent": 0,
+                    "EditorPosition": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "_type": "",
+                    "_fieldNames": [],
+                    "_serializedValues": [],
+                    "_serializedValueArray": [],
+                    "_serializedVariableReferences": [],
+                    "_serializedTriggerReferences": [],
+                    "_serializedEvents": [],
+                    "Triggers": [],
+                    "Init": 0
+                },
+                "Any": {
+                    "Parent": 0,
+                    "EditorPosition": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "_type": "",
+                    "_fieldNames": [],
+                    "_serializedValues": [],
+                    "_serializedValueArray": [],
+                    "_serializedVariableReferences": [],
+                    "_serializedTriggerReferences": [],
+                    "_serializedEvents": [],
+                    "Triggers": []
+                },
+                "Exit": {
+                    "Parent": 0,
+                    "EditorPosition": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "_type": "",
+                    "_fieldNames": [],
+                    "_serializedValues": [],
+                    "_serializedValueArray": [],
+                    "_serializedVariableReferences": [],
+                    "_serializedTriggerReferences": [],
+                    "_serializedEvents": [],
+                    "Triggers": []
+                },
+                "Fail": {
+                    "Parent": 0,
+                    "EditorPosition": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "_type": "",
+                    "_fieldNames": [],
+                    "_serializedValues": [],
+                    "_serializedValueArray": [],
+                    "_serializedVariableReferences": [],
+                    "_serializedTriggerReferences": [],
+                    "_serializedEvents": [],
+                    "Triggers": []
+                }
+            },
+            {
+                "Parent": 0,
+                "EditorPosition": {
+                    "x": 771.736328125,
+                    "y": -151.4111328125
+                },
+                "_type": "CoverShooter.AI.MaintainDistance, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                "_fieldNames": [
+                    "Position",
+                    "MinDistance",
+                    "MaxDistance",
+                    "ChargeDistance",
+                    "AvoidSpeed",
+                    "FollowSpeed",
+                    "ChargeSpeed",
+                    "Facing"
+                ],
+                "_serializedValues": [
+                    {
+                        "Type": 3,
+                        "ID": -6,
+                        "Vector": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "Object": {
+                            "instanceID": 0
+                        },
+                        "Text": "",
+                        "Array": [],
+                        "SubType": 0
+                    },
+                    {
+                        "Type": 1,
+                        "ID": 0,
+                        "Vector": {
+                            "x": 0.5,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "Object": {
+                            "instanceID": 0
+                        },
+                        "Text": "",
+                        "Array": [],
+                        "SubType": 0
+                    },
+                    {
+                        "Type": 1,
+                        "ID": 0,
+                        "Vector": {
+                            "x": 1.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "Object": {
+                            "instanceID": 0
+                        },
+                        "Text": "",
+                        "Array": [],
+                        "SubType": 0
+                    },
+                    {
+                        "Type": 1,
+                        "ID": 0,
+                        "Vector": {
+                            "x": 2.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "Object": {
+                            "instanceID": 0
+                        },
+                        "Text": "",
+                        "Array": [],
+                        "SubType": 0
+                    },
+                    {
+                        "Type": 9,
+                        "ID": 0,
+                        "Vector": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "Object": {
+                            "instanceID": 0
+                        },
+                        "Text": "",
+                        "Array": [],
+                        "SubType": 0
+                    },
+                    {
+                        "Type": 9,
+                        "ID": 0,
+                        "Vector": {
+                            "x": 1.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "Object": {
+                            "instanceID": 0
+                        },
+                        "Text": "",
+                        "Array": [],
+                        "SubType": 0
+                    },
+                    {
+                        "Type": 9,
+                        "ID": 0,
+                        "Vector": {
+                            "x": 1.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "Object": {
+                            "instanceID": 0
+                        },
+                        "Text": "",
+                        "Array": [],
+                        "SubType": 0
+                    },
+                    {
+                        "Type": 10,
+                        "ID": -7,
+                        "Vector": {
+                            "x": 1.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "Object": {
+                            "instanceID": 0
+                        },
+                        "Text": "",
+                        "Array": [],
+                        "SubType": 0
+                    }
+                ],
+                "_serializedValueArray": [],
+                "_serializedVariableReferences": [
+                    {
+                        "ID": 0
+                    },
+                    {
+                        "ID": 0
+                    },
+                    {
+                        "ID": 0
+                    },
+                    {
+                        "ID": 0
+                    },
+                    {
+                        "ID": 0
+                    },
+                    {
+                        "ID": 0
+                    },
+                    {
+                        "ID": 0
+                    },
+                    {
+                        "ID": 0
+                    }
+                ],
+                "_serializedTriggerReferences": [
+                    {
+                        "ID": 0
+                    },
+                    {
+                        "ID": 0
+                    },
+                    {
+                        "ID": 0
+                    },
+                    {
+                        "ID": 0
+                    },
+                    {
+                        "ID": 0
+                    },
+                    {
+                        "ID": 0
+                    },
+                    {
+                        "ID": 0
+                    },
+                    {
+                        "ID": 0
+                    }
+                ],
+                "_serializedEvents": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "Triggers": [
+                    10
+                ],
+                "Name": "MaintainDistance",
+                "HasLimitedTime": false,
+                "TimeLimit": {
+                    "Type": 1,
+                    "ID": 0,
+                    "Vector": {
+                        "x": 1.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "Object": {
+                        "instanceID": 0
+                    },
+                    "Text": "",
+                    "Array": [],
+                    "SubType": 0
+                },
+                "TimeOutTrigger": 0,
+                "SuccessTrigger": 0,
+                "FailureTrigger": 0,
+                "Extensions": [],
+                "Entry": {
+                    "Parent": 0,
+                    "EditorPosition": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "_type": "",
+                    "_fieldNames": [],
+                    "_serializedValues": [],
+                    "_serializedValueArray": [],
+                    "_serializedVariableReferences": [],
+                    "_serializedTriggerReferences": [],
+                    "_serializedEvents": [],
+                    "Triggers": [],
+                    "Init": 0
+                },
+                "Any": {
+                    "Parent": 0,
+                    "EditorPosition": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "_type": "",
+                    "_fieldNames": [],
+                    "_serializedValues": [],
+                    "_serializedValueArray": [],
+                    "_serializedVariableReferences": [],
+                    "_serializedTriggerReferences": [],
+                    "_serializedEvents": [],
+                    "Triggers": []
+                },
+                "Exit": {
+                    "Parent": 0,
+                    "EditorPosition": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "_type": "",
+                    "_fieldNames": [],
+                    "_serializedValues": [],
+                    "_serializedValueArray": [],
+                    "_serializedVariableReferences": [],
+                    "_serializedTriggerReferences": [],
+                    "_serializedEvents": [],
+                    "Triggers": []
+                },
+                "Fail": {
+                    "Parent": 0,
+                    "EditorPosition": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "_type": "",
+                    "_fieldNames": [],
+                    "_serializedValues": [],
+                    "_serializedValueArray": [],
+                    "_serializedVariableReferences": [],
+                    "_serializedTriggerReferences": [],
+                    "_serializedEvents": [],
+                    "Triggers": []
+                }
+            },
+            {
+                "Parent": 0,
+                "EditorPosition": {
+                    "x": 898.3662109375,
+                    "y": 315.121337890625
+                },
+                "_type": "CoverShooter.AI.Hit, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                "_fieldNames": [],
+                "_serializedValues": [],
+                "_serializedValueArray": [],
+                "_serializedVariableReferences": [],
+                "_serializedTriggerReferences": [],
+                "_serializedEvents": [],
+                "Triggers": [
+                    14
+                ],
+                "Name": "Hit",
+                "HasLimitedTime": false,
+                "TimeLimit": {
+                    "Type": 1,
+                    "ID": 0,
+                    "Vector": {
+                        "x": 1.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "Object": {
+                        "instanceID": 0
+                    },
+                    "Text": "",
+                    "Array": [],
+                    "SubType": 0
+                },
+                "TimeOutTrigger": 0,
+                "SuccessTrigger": 0,
+                "FailureTrigger": 9,
+                "Extensions": [
+                    11,
+                    13
+                ],
+                "Entry": {
+                    "Parent": 0,
+                    "EditorPosition": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "_type": "",
+                    "_fieldNames": [],
+                    "_serializedValues": [],
+                    "_serializedValueArray": [],
+                    "_serializedVariableReferences": [],
+                    "_serializedTriggerReferences": [],
+                    "_serializedEvents": [],
+                    "Triggers": [],
+                    "Init": 0
+                },
+                "Any": {
+                    "Parent": 0,
+                    "EditorPosition": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "_type": "",
+                    "_fieldNames": [],
+                    "_serializedValues": [],
+                    "_serializedValueArray": [],
+                    "_serializedVariableReferences": [],
+                    "_serializedTriggerReferences": [],
+                    "_serializedEvents": [],
+                    "Triggers": []
+                },
+                "Exit": {
+                    "Parent": 0,
+                    "EditorPosition": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "_type": "",
+                    "_fieldNames": [],
+                    "_serializedValues": [],
+                    "_serializedValueArray": [],
+                    "_serializedVariableReferences": [],
+                    "_serializedTriggerReferences": [],
+                    "_serializedEvents": [],
+                    "Triggers": []
+                },
+                "Fail": {
+                    "Parent": 0,
+                    "EditorPosition": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "_type": "",
+                    "_fieldNames": [],
+                    "_serializedValues": [],
+                    "_serializedValueArray": [],
+                    "_serializedVariableReferences": [],
+                    "_serializedTriggerReferences": [],
+                    "_serializedEvents": [],
+                    "Triggers": []
+                }
+            }
+        ]
+    },
+    "Variables": {
+        "keys": [],
+        "values": []
+    },
+    "Expressions": {
+        "keys": [
+            7
+        ],
+        "values": [
+            {
+                "Parent": 0,
+                "EditorPosition": {
+                    "x": 320.64501953125,
+                    "y": 615.5966796875
+                },
+                "_type": "CoverShooter.AI.IsWithinRange, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                "_fieldNames": [
+                    "Position",
+                    "Min",
+                    "Max"
+                ],
+                "_serializedValues": [
+                    {
+                        "Type": 3,
+                        "ID": -6,
+                        "Vector": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "Object": {
+                            "instanceID": 0
+                        },
+                        "Text": "",
+                        "Array": [],
+                        "SubType": 0
+                    },
+                    {
+                        "Type": 1,
+                        "ID": 0,
+                        "Vector": {
+                            "x": 0.5,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "Object": {
+                            "instanceID": 0
+                        },
+                        "Text": "",
+                        "Array": [],
+                        "SubType": 0
+                    },
+                    {
+                        "Type": 1,
+                        "ID": 0,
+                        "Vector": {
+                            "x": 1.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "Object": {
+                            "instanceID": 0
+                        },
+                        "Text": "",
+                        "Array": [],
+                        "SubType": 0
+                    }
+                ],
+                "_serializedValueArray": [],
+                "_serializedVariableReferences": [
+                    {
+                        "ID": 0
+                    },
+                    {
+                        "ID": 0
+                    },
+                    {
+                        "ID": 0
+                    }
+                ],
+                "_serializedTriggerReferences": [
+                    {
+                        "ID": 0
+                    },
+                    {
+                        "ID": 0
+                    },
+                    {
+                        "ID": 0
+                    }
+                ],
+                "_serializedEvents": [
+                    0,
+                    0,
+                    0
+                ]
+            }
+        ]
+    },
+    "Extensions": {
+        "keys": [
+            11,
+            13
+        ],
+        "values": [
+            {
+                "Parent": 8,
+                "EditorPosition": {
+                    "x": 0.0,
+                    "y": 0.0
+                },
+                "_type": "CoverShooter.AI.TurnTowardsExtension, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                "_fieldNames": [
+                    "Position"
+                ],
+                "_serializedValues": [
+                    {
+                        "Type": 3,
+                        "ID": -6,
+                        "Vector": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "Object": {
+                            "instanceID": 0
+                        },
+                        "Text": "",
+                        "Array": [],
+                        "SubType": 0
+                    }
+                ],
+                "_serializedValueArray": [],
+                "_serializedVariableReferences": [
+                    {
+                        "ID": 0
+                    }
+                ],
+                "_serializedTriggerReferences": [
+                    {
+                        "ID": 0
+                    }
+                ],
+                "_serializedEvents": [
+                    0
+                ],
+                "Owner": 8
+            },
+            {
+                "Parent": 8,
+                "EditorPosition": {
+                    "x": 0.0,
+                    "y": 0.0
+                },
+                "_type": "CoverShooter.AI.MaintainDistanceExtension, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                "_fieldNames": [
+                    "Position",
+                    "MinDistance",
+                    "MaxDistance",
+                    "ChargeDistance",
+                    "AvoidSpeed",
+                    "FollowSpeed",
+                    "ChargeSpeed"
+                ],
+                "_serializedValues": [
+                    {
+                        "Type": 3,
+                        "ID": -7,
+                        "Vector": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "Object": {
+                            "instanceID": 0
+                        },
+                        "Text": "",
+                        "Array": [],
+                        "SubType": 0
+                    },
+                    {
+                        "Type": 1,
+                        "ID": 0,
+                        "Vector": {
+                            "x": 0.5,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "Object": {
+                            "instanceID": 0
+                        },
+                        "Text": "",
+                        "Array": [],
+                        "SubType": 0
+                    },
+                    {
+                        "Type": 1,
+                        "ID": 0,
+                        "Vector": {
+                            "x": 1.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "Object": {
+                            "instanceID": 0
+                        },
+                        "Text": "",
+                        "Array": [],
+                        "SubType": 0
+                    },
+                    {
+                        "Type": 1,
+                        "ID": 0,
+                        "Vector": {
+                            "x": 2.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "Object": {
+                            "instanceID": 0
+                        },
+                        "Text": "",
+                        "Array": [],
+                        "SubType": 0
+                    },
+                    {
+                        "Type": 9,
+                        "ID": 0,
+                        "Vector": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "Object": {
+                            "instanceID": 0
+                        },
+                        "Text": "",
+                        "Array": [],
+                        "SubType": 0
+                    },
+                    {
+                        "Type": 9,
+                        "ID": 0,
+                        "Vector": {
+                            "x": 1.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "Object": {
+                            "instanceID": 0
+                        },
+                        "Text": "",
+                        "Array": [],
+                        "SubType": 0
+                    },
+                    {
+                        "Type": 9,
+                        "ID": 0,
+                        "Vector": {
+                            "x": 1.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "Object": {
+                            "instanceID": 0
+                        },
+                        "Text": "",
+                        "Array": [],
+                        "SubType": 0
+                    }
+                ],
+                "_serializedValueArray": [],
+                "_serializedVariableReferences": [
+                    {
+                        "ID": 0
+                    },
+                    {
+                        "ID": 0
+                    },
+                    {
+                        "ID": 0
+                    },
+                    {
+                        "ID": 0
+                    },
+                    {
+                        "ID": 0
+                    },
+                    {
+                        "ID": 0
+                    },
+                    {
+                        "ID": 0
+                    }
+                ],
+                "_serializedTriggerReferences": [
+                    {
+                        "ID": 0
+                    },
+                    {
+                        "ID": 0
+                    },
+                    {
+                        "ID": 0
+                    },
+                    {
+                        "ID": 0
+                    },
+                    {
+                        "ID": 0
+                    },
+                    {
+                        "ID": 0
+                    },
+                    {
+                        "ID": 0
+                    }
+                ],
+                "_serializedEvents": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "Owner": 8
+            }
+        ]
+    },
+    "Comments": {
+        "keys": [],
+        "values": []
+    },
+    "Triggers": {
+        "keys": [],
+        "values": []
+    },
+    "NodeTriggers": {
+        "keys": [
+            1,
+            3,
+            6,
+            9,
+            10,
+            14
+        ],
+        "values": [
+            {
+                "Name": "Init",
+                "Target": 2,
+                "Owner": -1,
+                "Type": 0,
+                "ID": 0,
+                "Event": 0,
+                "Expression": {
+                    "Type": 0,
+                    "ID": 0,
+                    "Vector": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "Object": {
+                        "instanceID": 0
+                    },
+                    "Text": "",
+                    "Array": [],
+                    "SubType": 0
+                },
+                "ExpressionValue": false,
+                "Values": [],
+                "Saves": []
+            },
+            {
+                "Name": "None",
+                "Target": 0,
+                "Owner": 2,
+                "Type": 0,
+                "ID": 0,
+                "Event": 0,
+                "Expression": {
+                    "Type": 0,
+                    "ID": 0,
+                    "Vector": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "Object": {
+                        "instanceID": 0
+                    },
+                    "Text": "",
+                    "Array": [],
+                    "SubType": 0
+                },
+                "ExpressionValue": false,
+                "Values": [],
+                "Saves": []
+            },
+            {
+                "Name": "NewTarget",
+                "Target": 4,
+                "Owner": 2,
+                "Type": 3,
+                "ID": 0,
+                "Event": 3,
+                "Expression": {
+                    "Type": 0,
+                    "ID": 0,
+                    "Vector": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "Object": {
+                        "instanceID": 0
+                    },
+                    "Text": "",
+                    "Array": [],
+                    "SubType": 0
+                },
+                "ExpressionValue": false,
+                "Values": [],
+                "Saves": []
+            },
+            {
+                "Name": "Can't",
+                "Target": 0,
+                "Owner": 8,
+                "Type": 0,
+                "ID": 0,
+                "Event": 0,
+                "Expression": {
+                    "Type": 0,
+                    "ID": 0,
+                    "Vector": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "Object": {
+                        "instanceID": 0
+                    },
+                    "Text": "",
+                    "Array": [],
+                    "SubType": 0
+                },
+                "ExpressionValue": false,
+                "Values": [],
+                "Saves": []
+            },
+            {
+                "Name": "Is True",
+                "Target": 8,
+                "Owner": 4,
+                "Type": 1,
+                "ID": 0,
+                "Event": 0,
+                "Expression": {
+                    "Type": 0,
+                    "ID": 7,
+                    "Vector": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "Object": {
+                        "instanceID": 0
+                    },
+                    "Text": "",
+                    "Array": [],
+                    "SubType": 0
+                },
+                "ExpressionValue": true,
+                "Values": [],
+                "Saves": []
+            },
+            {
+                "Name": "Is False",
+                "Target": 4,
+                "Owner": 8,
+                "Type": 1,
+                "ID": 0,
+                "Event": 0,
+                "Expression": {
+                    "Type": 0,
+                    "ID": 7,
+                    "Vector": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "Object": {
+                        "instanceID": 0
+                    },
+                    "Text": "",
+                    "Array": [],
+                    "SubType": 0
+                },
+                "ExpressionValue": false,
+                "Values": [],
+                "Saves": []
+            }
+        ]
+    },
+    "_id": 15
+}
